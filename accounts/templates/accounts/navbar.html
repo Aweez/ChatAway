@@ -1,0 +1,42 @@
+{% load static %}
+
+<style>
+  .hello-msg{
+    font-size: 18px;
+    color: #fff;
+    margin-right: 20px;
+  }
+</style>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-light">
+  <img src="{% static 'images/logosmall.PNG' %}">
+  <!-- <a class="navbar-brand" href="#">ChatAway</a> -->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ml-auto">
+      
+      {% if not request.user.is_authenticated %}
+      <li class="nav-item active p-1">
+        <a class="btn btn-primary btn-lg active" href="{% url 'home' %}">LOGIN</a>
+      </li>
+      <li class="nav-item active p-1">
+        <a class="btn btn-primary btn-lg active" href="{% url 'register' %}">SIGN UP</a>
+      </li>
+      {% endif %}
+    </ul>
+  </div>
+  
+
+
+  {% if request.user.is_authenticated %}
+
+  <b><span class="hello-msg text-dark">Hello, {{request.user}}</span></b>
+  
+  <span ><a  class="btn btn-primary btn-lg active" href="{% url 'logout' %}">Logout</a></span>
+  {% endif %}
+
+</nav>

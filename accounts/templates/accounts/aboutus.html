@@ -1,0 +1,82 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="{% static '/css/aboutus.css' %}">
+
+       <!-- Bootstrap Core CSS -->
+       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+       <link rel="stylesheet" type="text/css" href="{% static '/css/main.css' %}">
+       
+       <!-- Custom Fonts -->
+       <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+       <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+       <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+       <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+       <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+       <!-- Theme CSS -->
+       <link href="{% static 'css/agency.css' %}" rel="stylesheet">
+
+</head>
+
+
+{%  include 'accounts/navbar.html' %}
+
+
+<body>
+    
+
+    
+
+    <div class="team-section">
+        <h1>Our Team</h1>
+        <span class="border"></span>
+    <div class="ps">
+        <a href="#p1"><img src="{% static 'images/bird.jpg' %}" alt=""></a>
+        <a href="#p2"><img src="{% static 'images/bird.jpg' %}" alt=""></a>
+        <a href="#p3"><img src="{% static 'images/bird.jpg' %}" alt=""></a>
+        <a href="#p4"><img src="{% static 'images/bird.jpg' %}" alt=""></a>
+    </div>
+
+    <div class="section" id="p1">
+        <span class="name"><b>Mohammed Adnan K</b></span>
+        <span class="border"></span>
+        <p>
+            
+        </p>
+    </div>
+
+    <div class="section" id="p2">
+        <span class="name"><b>Mohamed Aweez Akram</b></span>
+        <span class="border"></span>
+        <p>
+            
+        </p>
+    </div>
+
+    <div class="section" id="p3">
+        <span class="name"><b>Naveen N</b></span>
+        <span class="border"></span>
+        <p>
+            
+        </p>
+    </div>
+
+    <div class="section" id="p4">
+        <span class="name"><b>Nithish Kumar R</b></span>
+        <span class="border"></span>
+        <p>
+         
+        </p>
+    </div>
+    
+    </div>
+
+
+
+</body>
+</html>
