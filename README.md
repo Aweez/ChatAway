@@ -1,2 +1,2 @@
 # ChatAway
-A video chatting website built using Django and PeerJS library.
+A video chat website built using Django.
